@@ -9,6 +9,7 @@
 body {
  position: relative;
  font-family: 'AkzidenzGroteskPro', sans-serif;
+ color: #000;
 }
 
 /*ОСНОВНОЙ БЛОК С ИНФОЙ*/
@@ -20,13 +21,14 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100vw 100vh;
+  z-index: 10;
 }
 .text {
   position: relative;
   margin-left: 4.5%;
   margin-top: 2.6%;
   margin-bottom: 4.5%;
-  z-index: 2;
+  z-index: 13;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -112,20 +114,19 @@ body {
 .bigflyer {
   position: absolute;
   width: 1026px;
-  margin-top: -950px;
-  z-index: 1;
-  margin-left: -7%;
+  z-index: 2;
+
 }
 .smallflyer {
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   width: 453px;
-  margin-top: -470px;
-  margin-left: 32%;
+  left: 391px;
+  top: 304px;
   transform: scale(-1,1);
-
-
 }
+
+
 /*БЛОК С КОСОМОСОМ*/
 .allgalaxy {
   width: 360px;
@@ -134,9 +135,7 @@ body {
   background-repeat: no-repeat;
   background-size: 360px 2000px;
   background-position: center;
-
   margin-left: 66%;
-
 }
 .scroll {
   width: 200px;
@@ -344,8 +343,7 @@ body {
     background-repeat: no-repeat;
     background-size: 483px 2751px;
     background-position: center;
-    margin-bottom: 80px;
-
+    margin-bottom: -100px;
     margin-left: 63%;
 
   }
@@ -402,13 +400,14 @@ body {
   .bigflyer {
     width: 1350px;
     height: 830px;
-    margin-top: -1200px;
-    margin-left: -5%;
+    top: -13vw;
+    left: -4vw;
   }
   .smallflyer {
     width: 608px;
     height: 572px;
-    margin-top: -590px;
+    top: 19vw;
+    left: 32vw;
   }
  .phone {
     display: none;
@@ -455,96 +454,54 @@ body {
    margin-top: 7%;
   }
 }
+@media (max-width: 1850px) {
+  .dopdata {
+    transform: translate(-128px);
+  }
+}
+@media (max-width: 1740px) {
+  .dopdata {
+    transform: translate(-94px);
+  }
+}
 @media (max-width: 1680px) {
   .allgalaxy {
     width: 420px;
     height: 2392px;
     background-image: url(../img/cosmos.png);
-    background-repeat: no-repeat;
     background-size: 420px 2392px;
-    background-position: center;
-
     margin-left: 63%;
-
   }
-  .phone {
-     display: none;
-   }
   .back {
-    position: fixed;
     background-image:url(../img/1680.png);
-    width: 100vw;
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100vw 100vh;
   }
   .text {
     margin: 60px 0 74px 100px;
   }
-  .text h1 {
-    font-size: 90px;
-  }
-  .text h2 {
-    font-size: 50px;
-  }
   .info {
     margin-top: 150px;
   }
-   p {
-    font-size: 24px;
-    line-height: 31px;
-  }
-  .info li ul li span {
-    font-size: 90px;
-    line-height: 90px;
-  }
-  .dopdata .time #bold {
-    font-weight: bold;
-    font-size: 24px;
-  }
   .dopdata {
     transform: translate(-85px);
-    display: flex;
-    align-items: flex-end;
-  }
-  .info li ul li:not(first-child) {
-    margin-top: 5px;
   }
   .info li ul {
     margin-bottom: -3px;
   }
-  .rectangle {
-    width: 125px;
-    height: 18px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-  }
   .bigflyer {
     width: 1301px;
     height: 813px;
-    margin-top: -1100px;
-    margin-left: -10%;
+    top: -25vh;
+    left: -11vw;
   }
   .smallflyer {
-    width: 608px;
-    height: 572px;
-    margin-top: -520px;
+    top: 37vh;
   }
   .mars {
-    width: 270px;
-    height: 270px;
     margin-top: 0%;
     margin-left: -18%;
   }
   .car {
     margin-top: 0%;
-    margin-left: -10%;
-  }
-  .earth {
-    width: 270px;
-    height: 270px;
-    margin-top: 4%;
     margin-left: -10%;
   }
   .carrot {
@@ -561,96 +518,76 @@ body {
   .arm {
     width: 400px;
     height: 400px;
-    margin-top: -26%;
+    margin-top: -4%;
     margin-left: 0%;
   }
   .nofall {
-   width: 200px;
-   height: 320px;
-   margin-top: 20%;
+   margin-top: -6%;
    margin-left: 50%;
   }
 }
+@media (max-width: 1622px) {
+  .bigflyer {
+    left: -16vw;
+  }
+  .dopdata {
+    transform: translate(-57px);
+  }
+}
+@media (max-width: 1590px) {
+  .dopdata {
+    transform: translate(-31px);
+
+  }
+}
+@media (max-width: 1540px) {
+  .bigflyer {
+    left: -17vw;
+  }
+  .dopdata {
+    transform: translate(-14px);
+  }
+}
+@media (max-width: 1490px) {
+  .bigflyer {
+    left: -21vw;
+  }
+  .dopdata {
+    transform: translate(-4px);
+  }
+}
 @media (max-width: 1440px) {
-  .text h1 {
-    font-size: 90px;
-  }
-  .text h2 {
-    font-size: 50px;
-  }
-  .phone {
-     display: none;
-   }
-  .info span {
-    font-size: 90px;
-   }
-   .info li {
-     font-size: 24px;
-     line-height: 31px;
-   }
-   .connection li {
-     font-size: 24px;
-   }
-   .dopdata .time #bold {
-     font-weight: bold;
-     font-size: 24px;
-   }
    .allgalaxy {
-     width: 403px;
+     width: 419px;
      height: 2295px;
      background-image: url(../img/cosmos.png);
-     background-repeat: no-repeat;
      background-size: 403px 2295px;
-     background-position: center;
-
-     margin-left: 63%;
-
-   }
+     margin-left: 62%;
+  }
    .back {
-     position: fixed;
      background-image:url(../img/1440.png);
-     width: 100vw;
-     height: 100vh;
-     background-repeat: no-repeat;
-     background-position: center;
-     background-size: 100vw 100vh;
    }
    .text {
-     position: relative;
      margin: 53px 0 75px 65px;
-     z-index: 2;
-     display: flex;
-     flex-direction: column;
-     justify-content: space-between;
    }
    .info {
      margin-top: 140px;
    }
    .dopdata {
      transform: translate(30px);
-     display: flex;
-     align-items: flex-end;
-   }
-   .info li ul {
-     margin-bottom: -5px;
-   }
-   .info li ul li:not(first-child) {
-     margin-top: 5px;
    }
    .bigflyer {
        width: 1108px;
        height: 692px;
-       margin-top: -1050px;
-       margin-left: -10%;
+       top: -21vh;
+       left: -9vw;
      }
      .smallflyer {
        width: 521px;
        height: 490px;
-       margin-top: -490px;
+       top: 34vh;
      }
    .mars {
-     width: 270px;
-     height: 270px;
      margin-top: -5%;
      margin-left: -18%;
    }
@@ -661,41 +598,28 @@ body {
    .arm {
      width: 350px;
      height: 350px;
-     margin-top: -26%;
+     margin-top: -7%;
      margin-left: 0%;
    }
    .nofall {
     width: 270px;
     height: 400px;
-    margin-top: 20%;
+    margin-top: 2%;
     margin-left: 50%;
    }
 }
 
 @media (max-width: 1366px) {
   .back {
-    position: fixed;
     background-image:url(../img/background.png);
-    width: 100vw;
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100vw 100vh;
   }
-  .phone {
-     display: none;
-   }
   .allgalaxy {
     width: 352px;
     height: 2005px;
     background-image: url(../img/cosmos.png);
-    background-repeat: no-repeat;
     background-size: 360px 2000px;
-    background-position: center;
-
     margin-left: 67%;
-
-  }
+ }
   .text h1 {
     font-size: 72px;
   }
@@ -728,31 +652,28 @@ body {
      margin-top: 20px;
    }
    .dopdata .time #bold {
-     font-weight: bold;
      font-size: 20px;
    }
    .bigflyer {
      width: 1026px;
      height: 641px;
-     margin-top: -870px;
-     margin-left: -6%;
+     left: -6%;
+     top: -24%;
    }
    .smallflyer {
      width: 453px;
      height: 426px;
-     margin-top: -420px;
-     margin-left: 38%;
+     top: 43vh;
+     left: 34vw;
    }
    .number {
      margin-left: 85px;
    }
    .dopdata {
-    display: flex;
     font-size: 20px;
     line-height: 26px;
     font-weight: lighter;
-    align-items: flex-end;
-   }
+  }
    .dopdata p:first-of-type {
      margin-right:  10px;
    }
@@ -800,13 +721,13 @@ body {
    .arm {
      width: 350px;
      height: 350px;
-     margin-top: -28%;
+     margin-top: -14%;
      margin-left: -10%;
    }
    .nofall {
     width: 200px;
     height: 320px;
-    margin-top: 10%;
+    margin-top: 0%;
     margin-left: 50%;
    }
 }
@@ -817,75 +738,57 @@ body {
     width: 335px;
     height: 1908px;
     background-image: url(../img/cosmos.png);
-    background-repeat: no-repeat;
     background-size: 335px 1908px;
-    background-position: center;
-
-    margin-left: 66%;
-
+    margin-left: 67%;
   }
-  .phone {
-     display: none;
-   }
   .back {
-    position: fixed;
     background-image:url(../img/background.png);
-    width: 100vw;
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100vw 100vh;
   }
   .dopdata {
     transform: translate(82px);
-    display: flex;
-    width: 492px;
-    justify-content: space-between;
-  }
-  .dopdata .time #bold {
-    font-weight: bold;
-    font-size: 20px;
+    width: 492px;n;
   }
   .bigflyer {
     width: 994px;
     height: 620px;
-    margin-top: -940px;
-    margin-left: -7%;
+    top: -22vh;
+    left: -7vw;
   }
   .smallflyer {
     width: 453px;
     height: 426px;
-    margin-top: -440px;
-    margin-left: 38%;
   }
   .earth {
-    width: 200px;
-    height: 200px;
-    margin-top: -5%;
-    margin-left: -10%;
+    margin-top: -5vh;
+    margin-left: -10vw;
   }
   .carrot {
-    width: 200px;
-    height: 200px;
     margin-top: -24%;
     margin-left: 58%;
   }
   .horse {
-    width: 200px;
-    height: 200px;
     margin-top: -45%;
   }
   .arm {
-    width: 350px;
-    height: 350px;
-    margin-top: -28%;
+    margin-top: -11%;
     margin-left: -10%;
   }
   .nofall {
-   width: 200px;
-   height: 320px;
-   margin-top: 8%;
+   margin-top: -2%;
    margin-left: 50%;
+  }
+}
+@media (max-width: 1188px) {
+  .dopdata {
+    transform: translate(102px);
+  }
+}
+@media (max-width: 1188px) {
+  .dopdata {
+    transform: translate(122px);
+  }
+  .time {
+    transform: translate(-82px);
   }
 }
 
@@ -906,22 +809,16 @@ body {
     font-size: 64px;
   }
   .back {
-    position: fixed;
     background-image:url(../img/1024.png);
-    width: 100vw;
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100vw 100vh;
   }
-  .phone {
-     display: none;
-   }
   .dopdata {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     transform: translateX(95px);
+  }
+  .time {
+    transform: translate(-55px);
   }
   .dopdata p:first-child {
     margin-left: 32px;
@@ -930,29 +827,22 @@ body {
   .bigflyer {
     width: 807px;
     height: 503px;
-    margin-top: -820px;
-    margin-left: -18%;
+    top: -19vh;
+    left: -18vw;
   }
   .smallflyer {
     width: 386px;
     height: 363px;
-    margin-top: -450px;
+    top: 244px;
     transform: scaleX(-1,1);
-    margin-left: 290px;
-  }
-  .rectangle {
-    width: 90px;
-    height: 13px;
+    left: 260px;
   }
   .allgalaxy {
     width: 352px;
     height: 2005px;
     background-image: url(../img/cosmos.png);
-    background-repeat: no-repeat;
     background-size: 352px 2005px;
-    background-position: center;
-
-    margin-left: 55%;
+    margin-left: 56%;
   }
   .number {
     display: flex;
@@ -984,11 +874,11 @@ body {
   .arm {
     width: 330px;
     height: 330px;
-    margin-left: -5%;
+    margin-left: 8%;
     margin-top: -10%;
   }
   .nofall {
-    margin-top: 18%;
+    margin-top: 4%;
   }
 }
 
@@ -1019,45 +909,30 @@ body {
      font-weight: bold;
      font-size: 18px;
    }
-
-   .allgalaxy {
+  .allgalaxy {
      width: 520px;
      height: 2962px;
      background-image: url(../img/cosmos.png);
-     background-repeat: no-repeat;
      background-size: 520px 2962px;
-     background-position: center;
-
      margin-left: 17.5%;
      margin-bottom: 340px;
-
    }
-   .phone {
-      display: none;
-    }
    .back {
-     position: fixed;
      background-image:url(../img/768.png);
-     width: 100vw;
-     height: 100vh;
-     background-repeat: no-repeat;
-     background-position: center;
-     background-size: 100vw 100vh;
    }
    .bigflyer {
      width: 784px;
      height: 397px;
-     margin-top: -1075px;
-     margin-left: -18%;
+     top: -18vh;
+     left: -17vw;
      transform: rotate(17deg);
    }
    .smallflyer {
      width: 497px;
      height: 515px;
-     margin-top: -525px;
+     top: 43vh;
      transform: scale(1,1);
-     margin-left: 260px;
-
+     left: 30vh;
    }
    .rectangle {
      width: 80px;
@@ -1107,6 +982,7 @@ body {
      width: 450px;
      height: 450px;
      margin-top: -11%;
+     margin-left: -5%;
    }
    .nofall {
     width: 320px;
@@ -1115,133 +991,178 @@ body {
     margin-left: 50%;
    }
 }
-@media (max-width: 600px) {
-  .text {
-    margin: 42px 0 42px 40px;
-  }
-  .otherinfo {
-    margin-top: 340px;
-  }
+@media (max-width: 706px) {
   .text h1 {
-    font-size: 50px;
+    font-size: 46px;
   }
   .text h2 {
-    font-size: 30px;
+    font-size: 26px;
   }
   .info  li ul li span {
-    font-size: 56px;
+    font-size: 54px;
    }
-   .info li {
-     font-size: 18px;
-     line-height: 23px;
+   .info li p {
+     font-size: 16px;
+     line-height: 21px;
    }
-   .connection li {
-     font-size: 18px;
+   .connection li p {
+     font-size: 16px;
+     line-height: 21px;
    }
    .dopdata .time #bold {
-     font-weight: bold;
-     font-size: 18px;
+     font-size: 16px;
    }
-
-   .allgalaxy {
-     width: 600px;
-     height: 3500px;
-     background-image: url(../img/cosmos.png);
-     background-repeat: no-repeat;
-     background-size: 600px 3500px;
-     background-position: center;
-
-     margin-left: 0%;
-     margin-bottom: 340px;
-
-   }
-   .phone {
-      display: none;
-    }
-   .back {
-     position: fixed;
-     background-image:url(../img/768.png);
-     width: 100vw;
-     height: 100vh;
-     background-repeat: no-repeat;
-     background-position: center;
-     background-size: 100vw 100vh;
+   .time {
+     transform: translate(-147px);
    }
    .bigflyer {
-     width: 784px;
-     height: 397px;
-     margin-top: -1075px;
-     margin-left: -18%;
-     transform: rotate(17deg);
+     left: -28vw;
    }
    .smallflyer {
-     width: 497px;
-     height: 515px;
-     margin-top: -525px;
-     transform: scale(1,1);
-     margin-left: 260px;
-
+     left: 16vh;
    }
-   .rectangle {
-     width: 80px;
+}
+@media (max-width: 635px) {
+  .text h1 {
+    font-size: 36px;
+  }
+  .text h2 {
+    font-size: 21px;
+  }
+  .info  li ul li span {
+    font-size: 54px;
+   }
+   .info li p {
+     font-size: 16px;
+     line-height: 21px;
+   }
+   .connection li p {
+     font-size: 16px;
+     line-height: 21px;
+   }
+   .dopdata .time #bold {
+     font-size: 16px;
+   }
+   .time {
+     transform: translate(-54px);
+     margin-top: 12px;
    }
    .dopdata {
      display: flex;
-     flex-direction: row;
-     align-items: flex-end;
-     width: 500px;
-     margin-bottom: 80px;
-     margin-left: -15px;
+     flex-direction: column;
+     align-items: flex-start;
+     margin-bottom: 74px;
    }
-   .dopdata p:first-child {
-     margin-bottom: 0px;
+   .number {
+     margin-left: 60px;
+     margin-top: -71px;
    }
-   .connection {
-     margin-left: 127px;
-     margin-top: -50px;
+   .bigflyer {
+     left: -42vw;
    }
-   .scroll {
-    width: 300px;
-    height: 300px;
-    margin-top: 358px;
-   }
-   .mars {
-     width: 300px;
-     height: 300px;
-     margin-top: 45%;
-   }
-   .earth {
-     width: 300px;
-     height: 300px;
-     margin-top: 19%;
-     margin-left: -10%;
-   }
-   .carrot {
-     width: 300px;
-     height: 300px;
-     margin-top: -15%;
-   }
-   .horse {
-     width: 300px;
-     height: 300px;
-     margin-top: -40%;
-   }
-   .arm {
-     width: 450px;
-     height: 450px;
-     margin-top: -11%;
-   }
-   .nofall {
-    width: 320px;
-    height: 490px;
-    margin-top: 10%;
-    margin-left: 50%;
-   }
+
+}
+@media (max-width: 475px) {
+  .text {
+    margin: 40px 0 20px 35px;
+  }
+  .otherinfo {
+    margin-top: 234px;
+  }
+  .text h1 {
+    font-size: 32px;
+  }
+  .text h2 {
+    font-size: 18px;
+  }
+  .number {
+    display: none;
+  }
+  .phone {
+    display: initial;
+    color: var(--minor);
+  }
+  .connection {
+    margin-left: 119px;
+  }
+  .connection li ul li img {
+    width: 24px;
+    height: 24px;
+  }
+  .info li ul li:not(first-child) {
+    margin-top: -28px;
+  }
+  .rectangle {
+    width: 81px;
+    height: 13px;
+    margin: 25px 12px 20px 0;
+  }
+  .allgalaxy {
+    width: 352px;
+    height: 2280px;
+    background-image: url(../img/cosmos.png);
+    background-size: 414px 2300px;
+    margin-left: 18%;
+    margin-bottom: 360px;
+  }
+  .bigflyer {
+    width: 484px;
+    height: 259px;
+    top: -21vw;
+    left: -17vw;
+  }
+  .smallflyer {
+    width: 381px;
+    height: 400px;
+    top: 62vw;
+    left: 15vw;
+}
+  .scroll {
+   width: 150px;
+   height: 150px;
+   margin-top: 305px;
+   margin-left: 8%;
+  }
+  .mars {
+    width: 200px;
+    height: 200px;
+    margin-top: 64%;
+    margin-left: -9%;
+  }
+  .car {
+    margin-top: 1%;
+    margin-left: -10%;
+  }
+  .earth {
+    width: 200px;
+    height: 200px;
+    margin-top: 15%;
+    margin-left: 1%;
+  }
+  .carrot {
+    width: 200px;
+    height: 200px;
+    margin-top: -5%;
+  }
+  .horse {
+    width: 200px;
+    height: 200px;
+    margin-top: -48%;
+  }
+  .arm {
+    width: 350px;
+    height: 350px;
+    margin-top: 5%;
+  }
+  .nofall {
+   width: 250px;
+   height: 400px;
+   margin-top: 1%;
+   margin-left: 40%;
+  }
+
 }
 @media (max-width: 414px) {
-  .text {
-    margin: 40px 20px 35px;
-  }
   .otherinfo {
     margin-top: 314px;
   }
@@ -1259,7 +1180,6 @@ body {
      line-height: 18px;
    }
    .dopdata .time #bold {
-     font-weight: bold;
      font-size: 14px;
    }
    .info li ul li:not(first-child){
@@ -1268,68 +1188,35 @@ body {
    .info li ul {
      margin-bottom: -30px;
    }
-   .connection li {
-     font-size: 18px;
-   }
-   .connection li ul li img {
-     width: 24px;
-     height: 24px;
-   }
-   .number {
-     display: none;
-   }
-  /* .phone {
-     display: initial;
-     color: var(--minor);
-   }*/
    .allgalaxy {
      width: 414px;
      height: 2300px;
      background-image: url(../img/cosmos.png);
-     background-repeat: no-repeat;
-     background-size: 414px 2300px;
-     background-position: center;
-
      margin-left: 0%;
      margin-bottom: 250px;
-
    }
    .back {
-     position: fixed;
      background-image:url(../img/414.png);
-     width: 100vw;
-     height: 100vh;
-     background-repeat: no-repeat;
-     background-position: center;
-     background-size: 100vw 100vh;
    }
    .bigflyer {
-     width: 484px;
-     height: 259px;
-     margin-top: -800px;
-     margin-left: -18%;
-     transform: rotate(17deg);
+     top: -24vw;
+     left: -28vw;
    }
    .smallflyer {
-     width: 381px;
-     height: 400px;
-     margin-top: -421px;
-     transform: scale(1,1);
-     margin-left: 20px;
-
+     top: 83vw;
+     left: -2vw;
    }
-
    .rectangle {
      width: 48px;
      height: 8px;
      margin: 32px 0 26px 0;
    }
    .dopdata {
-     display: flex;
-     flex-direction: column;
-     align-items: flex-start;
-     margin-bottom: 0px;
+     margin-bottom: -4px;
    }
+  .time {
+    margin-top: 4px;
+  }
    .dopdata p {
      font-size: 14px;
      line-height: 18px;
@@ -1396,64 +1283,35 @@ body {
   .text h1 {
     font-size: 23px;
   }
-
-   .info li {
-     font-size: 14px;
-     line-height: 18px;
-   }
-   .dopdata .time #bold {
-     font-weight: bold;
-     font-size: 14px;
-   }
    .connection li {
      font-size: 18px;
    }
-   .number {
-     display: none;
-   }
-  /* .phone {
-     display: initial;
-     color: var(--minor);
-   }*/
    .allgalaxy {
      width: 360px;
      height: 2051px;
      background-image: url(../img/cosmos.png);
-     background-repeat: no-repeat;
      background-size: 360px 2051px;
-     background-position: center;
-
      margin-left: 0%;
      margin-bottom: 275px;
-
    }
    .back {
-     position: fixed;
      background-image:url(../img/360.png);
-     width: 100vw;
-     height: 100vh;
-     background-repeat: no-repeat;
-     background-position: center;
-     background-size: 100vw 100vh;
    }
    .bigflyer {
      width: 412px;
      height: 221px;
-     margin-top: -715px;
-     margin-left: -18%;
+     top: -25vw;
+     left: -26vw;
      transform: rotate(17deg);
    }
    .smallflyer {
      width: 304px;
      height: 320px;
-     margin-top: -387px;
-     margin-left: 60px;
+     top: 81vw;
+     left: 9vw;
 
    }
    .dopdata {
-     display: flex;
-     flex-direction: column;
-     align-items: flex-start;
      margin-bottom: 0px;
    }
    .dopdata p:first-child {
@@ -1470,8 +1328,6 @@ body {
      margin-bottom: -30px;
    }
    .rectangle {
-     width: 48px;
-     height: 8px;
      margin: 37px 0 30px 0;
    }
    .connection {
@@ -1479,14 +1335,10 @@ body {
      margin-top: 20px;
    }
    .scroll {
-    width: 150px;
-    height: 150px;
     margin-top: 229px;
     margin-left: 8%;
    }
    .mars {
-     width: 200px;
-     height: 200px;
      margin-top: 53%;
      margin-left: -9%;
    }
@@ -1496,38 +1348,25 @@ body {
    margin-left: -10%;
  }
  .earth {
-   width: 200px;
-   height: 200px;
    margin-top: 3%;
    margin-left: 1%;
  }
  .carrot {
-   width: 200px;
-   height: 200px;
    margin-top: -5%;
  }
  .horse {
-   width: 200px;
-   height: 200px;
    margin-top: -38%;
  }
  .arm {
-   width: 350px;
-   height: 350px;
    margin-top: -30%;
  }
  .nofall {
-  width: 250px;
-  height: 400px;
   margin-top: 8%;
   margin-left: 40%;
  }
 
 }
    @media (max-width: 320px) {
-     .text {
-       margin: 22px 0 16px 32px;
-     }
      .otherinfo {
        margin-top: 217px;
      }
@@ -1537,79 +1376,39 @@ body {
      .text h2 {
        font-size: 14px;
      }
-     .info li ul li span {
-       font-size: 26px;
-     }
      .info li ul {
        margin-bottom: -33px;
      }
-      .info li {
-        font-size: 14px;
-        line-height: 18px;
-      }
-      .dopdata .time #bold {
-        font-weight: bold;
-        font-size: 14px;
-      }
-      .info li ul li:not(first-child) {
-        margin-top: -60px;
-
-      }
       .connection li {
         font-size: 18px;
       }
-      .number {
-        display: none;
-      }
-     /* .phone {
-        display: initial;
-        color: var(--minor);
-      }*/
       .allgalaxy {
         width: 320px;
         height: 1820px;
         background-image: url(../img/cosmos.png);
-        background-repeat: no-repeat;
         background-size: 320px 1820px;
-        background-position: center;
-
         margin-left: 0%;
         margin-bottom: 340px;
-
       }
       .back {
-        position: fixed;
         background-image:url(../img/320.png);
-        width: 100vw;
-        height: 100vh;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 100vw 100vh;
       }
       .bigflyer {
         width: 381px;
         height: 204px;
-        margin-top: -620px;
-        margin-left: -24%;
+        top: -25vw;
+        left: -30vw;
         transform: rotate(17deg);
       }
       .smallflyer {
         width: 256px;
         height: 270px;
-        margin-top: -308px;
-        margin-left: 66px;
-
+        top: 83vw;
+        left: -14vw;
       }
       .dopdata {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-bottom: 0px;
-      }
-      .rectangle {
-        width: 39px;
-        height: 7px;
-        margin: 37px 0 30px 0;
+        transform: translateX(80px);
+        margin-bottom: -6px;
       }
       .dopdata p {
         font-size: 12px;
@@ -1623,8 +1422,6 @@ body {
         margin-top: 20px;
       }
       .scroll {
-       width: 150px;
-       height: 150px;
        margin-top: 229px;
        margin-left: 8%;
       }
@@ -1634,7 +1431,6 @@ body {
         margin-top: 41%;
         margin-left: -9%;
       }
-
     .car {
       margin-top: 2%;
       margin-left: -10%;
@@ -1646,8 +1442,6 @@ body {
       margin-left: 1%;
     }
     .carrot {
-      width: 200px;
-      height: 200px;
       margin-top: -5%;
     }
     .horse {
@@ -1658,7 +1452,7 @@ body {
     .arm {
       width: 300px;
       height: 300px;
-      margin-top: -30%;
+      margin-top: -21%;
     }
     .nofall {
      width: 200px;
@@ -1666,5 +1460,4 @@ body {
      margin-top: 8%;
      margin-left: 15;
     }
-
-  ]
+}
