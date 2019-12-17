@@ -1175,7 +1175,7 @@ body {
 }
 @media (max-width: 414px) {
   .otherinfo {
-    margin-top: 314px;
+    margin-top: 221px;
   }
   .text h1 {
     font-size: 28px;
@@ -1214,7 +1214,7 @@ body {
      left: -28vw;
    }
    .smallflyer {
-     top: 83vw;
+     top: 58vw;
      left: -2vw;
    }
    .rectangle {
