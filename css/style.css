@@ -1063,6 +1063,10 @@ body {
 
 }
 @media (max-width: 475px) {
+  .back {
+    background-size: 100vw 100vh;
+    background-image: 100vw 100vh;
+  }
   .text {
     margin: 40px 0 20px 35px;
   }
