@@ -5,14 +5,19 @@
   --major: #FFF;
   --minor: #D764FF;
 }
-
+* {
+  box-sizing: border-box;
+}
 body {
  position: relative;
  font-family: 'AkzidenzGroteskPro', sans-serif;
- color: #000;
+ background: #000;
 }
 
 /*ОСНОВНОЙ БЛОК С ИНФОЙ*/
+.wrapper {
+  overflow: hidden;
+}
 .back {
   position: fixed;
   background-image:url(../img/background.png);
@@ -338,17 +343,17 @@ body {
   .allgalaxy {
     width: 483px;
     height: 2751px;
-    background-image: url(../img/cosmos.png);
     background-repeat: no-repeat;
     background-size: 483px 2751px;
     background-position: center;
     margin-bottom: -100px;
-    margin-left: 63%;
-
-  }
+    margin-left: 68%;
+    overflow: hidden;
+    transform: translateY(-80px);
+   }
   .back {
     position: fixed;
-    background-image:url(../img/1920.png);
+    background-image:url(../img/background.png);
     width: 100vw;
     height: 100vh;
     background-repeat: no-repeat;
@@ -990,7 +995,7 @@ body {
     margin-left: 50%;
    }
 }
-@media (max-width: 706px) {
+@media (max-width: 710px) {
   .text h1 {
     font-size: 46px;
   }
@@ -1004,6 +1009,12 @@ body {
      font-size: 16px;
      line-height: 21px;
    }
+   .dopdata {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     margin-bottom: 74px;
+   }
    .connection li p {
      font-size: 16px;
      line-height: 21px;
@@ -1012,7 +1023,8 @@ body {
      font-size: 16px;
    }
    .time {
-     transform: translate(-147px);
+     transform: translate(-53px);
+     margin-top: 12px;
    }
    .bigflyer {
      left: -28vw;
@@ -1042,10 +1054,6 @@ body {
    .dopdata .time #bold {
      font-size: 16px;
    }
-   .time {
-     transform: translate(-54px);
-     margin-top: 12px;
-   }
    .dopdata {
      display: flex;
      flex-direction: column;
@@ -1072,13 +1080,16 @@ body {
     margin-top: 0px;
     margin-left: 23px;
   }
+  .smallflyer {
+    left: 16vh;
+  }
 }
 @media (max-width: 475px) {
   .text {
     margin: 40px 0 20px 35px;
   }
   .otherinfo {
-    margin-top: 234px;
+    margin-top: 362px;
   }
   .text h1 {
     font-size: 32px;
@@ -1115,6 +1126,7 @@ body {
     background-size: 414px 2300px;
     margin-left: 16%;
     margin-bottom: 360px;
+    overflow: hidden;
   }
   .bigflyer {
     width: 484px;
@@ -1125,7 +1137,7 @@ body {
   .smallflyer {
     width: 381px;
     height: 400px;
-    top: 62vw;
+    top: 81vw;
     left: 15vw;
 }
   .scroll {
@@ -1175,7 +1187,7 @@ body {
 }
 @media (max-width: 414px) {
   .otherinfo {
-    margin-top: 163px;
+    margin-top: 413px;
   }
   .text h1 {
     font-size: 28px;
@@ -1210,11 +1222,11 @@ body {
      background-image:url(../img/414.png);
    }
    .bigflyer {
-     top: -24vw;
+     top: -16vw;
      left: -28vw;
    }
    .smallflyer {
-     top: 58vw;
+     top: 93vw;
      left: -2vw;
    }
    .rectangle {
@@ -1382,7 +1394,7 @@ body {
        margin: 22px 0 16px 16px;
      }
        .otherinfo {
-       margin-top: 193px;
+       margin-top: 182px;
      }
      .text h1 {
        font-size: 20px;
