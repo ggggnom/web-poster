@@ -58,7 +58,6 @@ body {
 .info span {
   font-size: 72px;
   font-weight: bold;
-
 }
 .info li ul li:not(first-child) {
   margin-top: 30px;
@@ -1062,11 +1061,19 @@ body {
    }
 
 }
-@media (max-width: 475px) {
-  .back {
-    background-size: 100vw 100vh;
-    background-image: 100vw 100vh;
+@media (max-width: 607px) {
+  .number {
+    display: flex;
+    flex-direction: row;
+    margin-left: -265px;
+    margin-top: 51px;
   }
+  .lastnum {
+    margin-top: 0px;
+    margin-left: 23px;
+  }
+}
+@media (max-width: 475px) {
   .text {
     margin: 40px 0 20px 35px;
   }
@@ -1106,7 +1113,7 @@ body {
     height: 2280px;
     background-image: url(../img/cosmos.png);
     background-size: 414px 2300px;
-    margin-left: 18%;
+    margin-left: 16%;
     margin-bottom: 360px;
   }
   .bigflyer {
@@ -1282,7 +1289,7 @@ body {
     margin: 22px 0 16px 32px;
   }
   .otherinfo {
-    margin-top: 248px;
+    margin-top: 225px;
   }
   .text h1 {
     font-size: 23px;
@@ -1304,14 +1311,14 @@ body {
    .bigflyer {
      width: 412px;
      height: 221px;
-     top: -25vw;
+     top: -30vw;
      left: -26vw;
      transform: rotate(17deg);
    }
    .smallflyer {
      width: 304px;
      height: 320px;
-     top: 81vw;
+     top: 60vw;
      left: 9vw;
 
    }
@@ -1319,7 +1326,7 @@ body {
      margin-bottom: 0px;
    }
    .dopdata p:first-child {
-     margin-bottom: 20px;
+     margin-bottom: 10px;
    }
    .info li ul li span {
     font-size: 34px;
@@ -1371,8 +1378,11 @@ body {
 
 }
    @media (max-width: 320px) {
-     .otherinfo {
-       margin-top: 217px;
+     .text {
+       margin: 22px 0 16px 16px;
+     }
+       .otherinfo {
+       margin-top: 193px;
      }
      .text h1 {
        font-size: 20px;
@@ -1400,15 +1410,15 @@ body {
       .bigflyer {
         width: 381px;
         height: 204px;
-        top: -25vw;
+        top: -24vw;
         left: -30vw;
         transform: rotate(17deg);
       }
       .smallflyer {
         width: 256px;
         height: 270px;
-        top: 83vw;
-        left: -14vw;
+        top: 76vw;
+        left: 17vw;
       }
       .dopdata {
         transform: translateX(80px);
@@ -1419,7 +1429,7 @@ body {
         line-height: 15px;
       }
       .dopdata p:first-child {
-        margin-bottom: 20px;
+        margin-bottom: 8px;
       }
       .connection {
         margin-left: 0px;
