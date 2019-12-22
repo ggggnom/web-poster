@@ -178,14 +178,14 @@ body {
   height: 200px;
   margin-top: -8%;
   margin-left: 50%;
-  animation: moveInRight 8s linear infinite;
+  animation: moveInRight 5s linear infinite;
 }
 .horse {
   display: block;
   width:  200px;
   height: 200px;
   margin-top: -30%;
-  animation: moveforcarrot 4s linear infinite;
+  animation: moveforcarrot 5s linear infinite;
 }
 .arm {
   display: block;
