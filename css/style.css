@@ -177,15 +177,15 @@ body {
   width:  200px;
   height: 200px;
   margin-top: -8%;
-  margin-left: 50%;
-  animation: moveInRight 5s linear infinite;
+  margin-left: 49%;
+  animation: moveInRight 6s linear infinite;
 }
 .horse {
   display: block;
   width:  200px;
   height: 200px;
   margin-top: -30%;
-  animation: moveforcarrot 5s linear infinite;
+  animation: moveforcarrot 6s linear infinite;
 }
 .arm {
   display: block;
